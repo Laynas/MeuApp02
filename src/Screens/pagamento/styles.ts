@@ -12,28 +12,49 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.white,
     width: '100%'
   },
+  container_paga: {
+    flex: 1,
+    padding: 10,
+    alignItems: 'center',
+    backgroundColor: theme.colors.white,
+    width: '100%'
+  },
+  container_sacola: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: theme.colors.white,
+    width: '100%'
+  },
   container_linha: {
     height: 100,
     flexDirection: "row",
     width: '100%',
     justifyContent: 'space-evenly',
-    alignItems: 'center'
+    marginLeft: -120
+  },
+  container_linha_sacola: {
+    height: 100,
+    flexDirection: "row",
+    width: '100%',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    marginTop:10
   },
   label: {
     color: theme.colors.primary,
     fontFamily: theme.fonts.text500,
     fontSize: 15,
     textAlign: 'left',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   input: {
     color: theme.colors.primary,
     fontFamily: theme.fonts.text400,
     fontSize: 20,
     textAlign: 'center',
+    width:'auto',
     borderBottomColor: theme.colors.primary,
     borderBottomWidth: 2,
-    marginBottom: 10,
     marginTop: 10
   },
   content: {
@@ -60,9 +81,8 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 25,
     fontWeight: 'bold',
-    marginBottom: 5,
     fontFamily: theme.fonts.title700,
-    lineHeight: 40
+
   },
   imagePromocao: {
     marginTop: -20,
@@ -77,8 +97,10 @@ export const styles = StyleSheet.create({
     background:'none'
   },
   linha: {
-    marginTop: 15,
-    marginBottom: 15
+    width: '100%',
+    height: 1,
+    margin:2,
+    backgroundColor: '#000000'
   },
   subtitle: {
     color: theme.colors.heading,
@@ -102,5 +124,19 @@ export const styles = StyleSheet.create({
     height: 80,
     background:'none'
   },
+  label_paga: {
+    color: theme.colors.primary,
+    fontFamily: theme.fonts.text500,
+    fontSize: 25,
+    textAlign: 'left',
+    fontWeight: 'bold',
+    marginTop: 100
+  },
+  espaco: {
+ marginTop:200
+  },
+  espaco_menor: {
+    marginTop:50
+     }
 
 });

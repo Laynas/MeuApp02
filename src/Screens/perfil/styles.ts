@@ -2,7 +2,6 @@ import { StyleSheet } from 'react-native';
 import { BorderlessButton } from 'react-native-gesture-handler';
 
 import { theme } from '../../global/styles/theme';
-import { Nova_conta_endereco } from '../nova_conta_endereco';
 
 export const styles = StyleSheet.create({
   container: {
@@ -11,6 +10,28 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: theme.colors.white,
     width: '100%'
+  },
+  container_sacola: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: theme.colors.white,
+    width: '100%'
+  },
+  itemLoja: {
+    marginTop: 0,
+    marginBottom: 10,
+    marginLeft: 10,
+    width:120,
+    height: 120,
+    background:'none'
+  },
+  container_linha_sacola: {
+    height: 100,
+    flexDirection: "row",
+    width: '80%',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    marginTop:10
   },
   container_linha: {
     height: 100,
@@ -55,6 +76,12 @@ export const styles = StyleSheet.create({
     width: '100%',
     paddingHorizontal: 5
   },
+  imageCesta: {
+    marginTop: 0,
+    width:40,
+    height: 40,
+    background:'none'
+  },
   title: {
     color: theme.colors.text,
     textAlign: 'center',
@@ -64,43 +91,50 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.title700,
     lineHeight: 40
   },
-  imagePromocao: {
-    marginTop: -20,
-    marginBottom: 15,
-    width:400,
-    height: 120
+
+  sub_title: {
+    color: theme.colors.text_cinza,
+    textAlign: 'center',
+    fontSize: 20,
+    marginBottom: 5,
+    fontFamily: theme.fonts.title700,
+    lineHeight: 40
   },
-  imageCesta: {
+
+  imageLogo: {
     marginTop: 0,
-    width:40,
-    height: 40,
-    background:'none'
+    marginBottom: 15,
+    height: 100,
+    width: 100
+  },
+
+  imageGrande: {
+    marginTop: 0,
+    marginBottom: 15,
+    marginLeft: 50,
+    height: 250,
+    width: 250
   },
   linha: {
-    marginTop: 15,
-    marginBottom: 15
+    width: '80%',
+    height: 1,
+    margin:5,
+    backgroundColor: '#000000'
   },
   subtitle: {
     color: theme.colors.heading,
     fontSize: 15,
     textAlign: 'center',
+    marginBottom: 64,
     fontFamily: theme.fonts.title500,
     lineHeight: 25
   },
-  preco: {
-    color: theme.colors.text_roxo,
-    fontSize: 15,
-    textAlign: 'center',
-    fontFamily: theme.fonts.title700,
-    lineHeight: 25,
-    marginBottom: 15
-  },
-  itemLoja: {
-    marginTop: 0,
-    marginBottom: 10,
-    width:120,
-    height: 80,
-    background:'none'
-  },
+  espaco_menor: {
+    marginTop:50
+     },  
+     espaco: {
+      marginTop:100
+       },
+
 
 });

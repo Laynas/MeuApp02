@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     width: '100%',
     justifyContent: 'space-evenly',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   label: {
     color: theme.colors.primary,

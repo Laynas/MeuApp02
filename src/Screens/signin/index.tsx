@@ -33,7 +33,7 @@ export function SignIn() {
       }
 
       const handleNavigateLogar = () => {
-        navigation.navigate('Sucesso');
+        navigation.navigate('Home');
         // navigation.goBack();
       }
     return (

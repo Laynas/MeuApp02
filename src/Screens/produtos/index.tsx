@@ -30,7 +30,7 @@ import { TextInput } from 'react-native-gesture-handler';
 import { useNavigation, useFocusEffect } from "@react-navigation/native";
 
 
-export function Home() {
+export function Produtos() {
     const navigation = useNavigation<any>();
 
     const handleNavigateProdutos = () => {
@@ -56,7 +56,7 @@ export function Home() {
         
       <View style={styles.container_linha}>
       <Text style={styles.title}>
-          HOME
+          Produtos
         </Text>
 
         <Text onPress={handleNavigateCarrinho}>
@@ -69,24 +69,19 @@ export function Home() {
       </View>
 
       
-      <Image
-        source={logoPromocao}
-        style={styles.imagePromocao}
-        resizeMode="stretch"
-      />
+      <Text style={styles.label}>
+          O que você esta procurando?{'\n'}
+        </Text>
+        
+        <TextInput style={styles.input} placeholder="Pesquise aqui..."
+          keyboardType='email-address'
+          placeholderTextColor={theme.colors.primary}
+          maxLength={20}
+        >
+        </TextInput>
 
       <View style={styles.content}>
-      
-        <View style={styles.controls} >
-          <Text style={styles.label} onPress={handleNavigateProdutos}>
-            Notebook
-          </Text>
-          <Text style={styles.label} onPress={handleNavigateProdutos}>
-            Ver tudo
-          </Text>
-        </View>
-
-        <Text onPress={handleNavigateCarrinho}> 
+      <Text onPress={handleNavigateCarrinho}> 
         <View style={styles.container} >
           <Image
           source={computador}
@@ -106,15 +101,6 @@ export function Home() {
         </View>
         </Text>
 
-        <View style={styles.controls} >
-          <Text style={styles.label} onPress={handleNavigateProdutos}>
-            Computadores
-          </Text>
-          <Text style={styles.label} onPress={handleNavigateProdutos}>
-            Ver tudo
-          </Text>
-        </View>
-
         <Text onPress={handleNavigateCarrinho}> 
         <View style={styles.container} >
           <Image
@@ -134,44 +120,7 @@ export function Home() {
 
         </View>
         </Text>
-
-        <View style={styles.controls} >
-          <Text style={styles.label} onPress={handleNavigateProdutos}>
-            Hardware
-          </Text>
-          <Text style={styles.label} onPress={handleNavigateProdutos}>
-            Ver tudo
-          </Text>
-        </View>
-
         <Text onPress={handleNavigateCarrinho}> 
-        <View style={styles.container} >
-          <Image
-          source={caixa_rayzen}
-          style={styles.itemLoja}
-          resizeMode="stretch"
-        />
-          <Text style={styles.title}>
-            AMD Ryzen 7 5800X
-          </Text>
-          <Text style={styles.subtitle}>
-          Loja Sistech Eletronicos
-          </Text>
-          <Text style={styles.preco}>
-            R$ 2.880,00
-          </Text>
-
-        </View>
-  </Text>
-        <View style={styles.controls} >
-          <Text style={styles.label} onPress={handleNavigateProdutos}>
-            Periféricos
-          </Text>
-          <Text style={styles.label} onPress={handleNavigateProdutos}>
-            Ver tudo
-          </Text>
-        </View>   
-        <Text onPress={handleNavigateCarrinho}>  
         <View style={styles.container} >
           <Image
           source={fonex}
@@ -222,7 +171,6 @@ export function Home() {
         />
         </Text> 
         </View>
-
       </View>
       <Image
         source={linha}

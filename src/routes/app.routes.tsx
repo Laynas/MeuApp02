@@ -10,6 +10,10 @@ import { Nova_conta_pessoal } from '../Screens/nova_conta_pessoal';
 import { Nova_conta_endereco } from '../Screens/nova_conta_endereco';
 import { Foto_perfil } from '../Screens/foto_perfil';
 import { Sucesso } from '../Screens/sucesso';
+import { Produtos } from '../Screens/produtos';
+import { Carrinho } from '../Screens/sacola';
+import { Pagamento } from '../Screens/pagamento';
+import { Perfil } from '../Screens/perfil';
 const Stack = createStackNavigator();
 
 export function AppRoutes() {
@@ -25,6 +29,10 @@ export function AppRoutes() {
       <Stack.Screen name='Nova_conta_endereco' component={Nova_conta_endereco}/>
       <Stack.Screen name='Foto_perfil' component={Foto_perfil}/>
       <Stack.Screen name='Sucesso' component={Sucesso}/>
+      <Stack.Screen name="Produtos" component={Produtos} />
+      <Stack.Screen name="Carrinho" component={Carrinho} />
+      <Stack.Screen name="Pagamento" component={Pagamento} />
+      <Stack.Screen name="Perfil" component={Perfil} />
     </Stack.Navigator>
   );
 }
